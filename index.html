@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Vis & Society Assignment 4 — Persuasive or Deceptive Visualization?</title>
+  <link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+  <style>
+    figure img { width: 100%; max-width: 960px; border: 1px solid #ccc; }
+    .score { font-weight: 700; }
+    ul li { margin-bottom: 0.8rem; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <small>Assignment 4</small>
+      Persuasive or Deceptive Visualization?
+    </h1>
+    <p><strong>Courtney Ma</strong> — <em>cma26@mit.edu</em></p>
+  </header>
+
+  <main>
+    <h2>Proposition: The CCRB process disadvantages Black complainants relative to white complainants.</h2>
+
+    <section>
+      <h3>FOR the Proposition</h3>
+
+      <figure>
+        <img src="for_proposition.png" alt="A two-panel chart comparing complaint counts and substantiation rates by complainant ethnicity. Black complainants have the highest complaint count but a lower substantiation rate than white complainants." />
+        <figcaption>
+          Black New Yorkers filed by far the largest number of CCRB complaints, yet their allegations were substantiated at a lower rate than those filed by white complainants.
+        </figcaption>
+      </figure>
+
+      <p>Design Decisions and Rationale:</p>
+      <ul>
+        <li><span class="score">(-0.5)</span> I juxtaposed the total number of complaints with the substantiation rate for each group by displaying the
+           statistics side by side. Showing these two measures together makes the issue feel broader than simply using a single statistic. The complaint counts highlight how frequently Black residents appear in the data, while the substantiation rates show differences in outcomes. Together, the two images encourage the reader to see a disparity, even though the data alone cannot establish a direct causal explanation.</li>
+
+        <li><span class="score">(-1.5)</span> I highlighted the bars representing statistics for Black people in darker tones and used a muted gray for the other groups. This contrast directs attention exactly where I want it and makes the comparison feel more emphasized before the reader has carefully inspected the numbers. I considered giving every group equal visual weight, but that looked more neutral and a lot less impactful.
+</li>
+
+        <li><span class="score">(-1.0)</span> I framed the title in more evaluative language using phrasing like “less likely to be believed.” The chart technically shows substantiation rate, not whether a complainant was literally believed, so this wording subtly twists an administrative outcome into a human judgment. The phrasing is meant to make the takeaway faster and more emotionally impactful, but it stretches beyond what the unbiased data directly indicates.
+</li>
+
+        <li><span class="score">(1.0)</span> I kept the substantiation-rate axis starting at zero and labeled all values directly. This choice preserves the magnitude of the difference instead of exaggerating it through a truncated scale. I considered zooming into around the 20%–30% range to make the gap appear much larger, but that decision felt like it would have been more than just persuasive and leaning into some spirit of “falsifying data”.
+</li>
+
+        <li><span class="score">(0.5)</span> I only included records where the complainant’s ethnicity was reported and mentioned this in the caption. A lot of entries in the dataset are missing this information, so I wanted to be clear about the subset being analyzed. I thought about showing the missing data separately, but doing so made the visualization feel more cluttered and weakened the main narrative. </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>AGAINST the Proposition</h3>
+
+      <figure>
+        <img src="against_proposition.png" alt="A line chart over time comparing annual counts of substantiated allegations for Black versus white complainants. The Black line is much higher than the white line across most years." />
+        <figcaption>
+          Looking at raw counts of substantiated allegations instead of rates suggests that the CCRB has validated many more complaints from Black New Yorkers than from white complainants.
+        </figcaption>
+      </figure>
+
+      <p>Design Decisions and Rationale:</p>
+      <ul>
+        <li><span class="score">(-2.0)</span> I switched from using rates to using raw counts of substantiated allegations. This is my main difference in comparison to my first visualization. Because Black complainants file more complaints overall, showing absolute counts makes it appear that the system substantiates more of their cases, even though the success rate per complaint is lower. By not showing the total number of allegations, viewers have a much different interpretation of the data. </li>
+
+        <li><span class="score">(-1.0)</span> I limited the comparison to only Black and White complainants. Focusing on just these two groups simplifies the chart and makes the contrast easier to see at a glance, which strengthens the “against” argument. I considered including all ethnic groups, but the chart started to feel more cluttered and the main comparison became less clear.
+ </li>
+
+        <li><span class="score">(-0.5)</span> I used a line chart over time to highlight trends in substantiated complaints. The continuous lines make the pattern feel like there’s some historical consistency, which encourages viewers to interpret it as a consistent process rather than just a result of higher complaint volume. I also tried a bar chart of total substantiated cases, but it made the framing feel more selective while the continuous line made the argument seem more natural. </li>
+        
+        <li><span class="score">(-1.0)</span> I used specific phrasing in the title like “account for many more validated cases” because the word “validated” has a positive tone and frames substantiation as evidence that the system is working for Black complainants. The phrasing is technically accurate, but it was chosen to steer attention away from the viewer wondering if the higher number of substantiated cases could be due to other reasons. </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Final Reflection</h2>
+
+      <p>
+        What surprised me most in this exercise was how little I had to change the underlying data to produce two very different interpretations. I did not modify the dataset itself, change the coding, or rely on an obviously misleading axis. Instead, most of the difference came from framing choices such as using leaving out certain pieces of data (using rates vs. direct counts, etc.), different phrasing in the titles, and different visual emphasis. In the “for” chart, I framed the CCRB process as a question of fairness given that a complaint has been filed, which makes rates the most relevant statistic. In the “against” chart, I focused on how many complaints ultimately lead to substantiated findings, so raw counts become the more natural measure to emphasize my point. Both perspectives are technically valid on their own, but each one encourages the reader to overlook the context that might weaken its argument.
+      </p>
+
+      <p>
+        Working on this assignment made me realize that ethical visualization is more than just about whether a graphic is “honest” or “dishonest.” It really depends on how much context the designer provides. A persuasive chart can still be pretty ethical if it highlights a real pattern while leaving room for readers to interpret the data themselves. On the other hand, a visualization feels like it becomes more misleading or dishonest when it hides important context, especially when missing denominators in rates, comparison groups, or uncertainty that could change the viewer’s conclusion. The challenge is that these boundaries are not strictly technical. They also depend on the audience, the sensitivity of the topic, and things like whether the goal is to inform people or quietly push them toward a particular interpretation.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
